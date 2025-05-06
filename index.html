@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learnify - E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      
+      <button id="dark-mode-toggle">🌙</button>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Add above .courses in course-list -->
+<div class="filter-bar">
+  <button data-filter="all" class="filter-btn active">All</button>
+  <button data-filter="web">Web Dev</button>
+  <button data-filter="data">Data Science</button>
+</div>
+
+    <!-- Course Listing -->
+    <section class="course-list">
+      <h1>Available Courses</h1>
+      <div class="courses">
+        <div class="course-card">
+          <img src="https://via.placeholder.com/400x200.png?text=Web+Development+Course" alt="Introduction to Web Development">
+          <h2>Introduction to Web Development</h2>
+          <p>Saumya Verma</p>
+          <p class="description">Learn the basics of web development with HTML, CSS, and JavaScript in this beginner-friendly course.</p>
+          <a href="#" class="enroll-btn">Enroll Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress Dashboard -->
+    <section class="progress-dashboard">
+      <h1>Your Progress</h1>
+      <div class="course-progress">
+        <h2>Introduction to Web Development</h2>
+        <span class="badge">Completed</span>
+
+        <div class="progress-bar">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
+        <p>Progress: <span class="progress-text">60%</span></p>
+      </div>
+    </section>
+
+    <!-- Course Video -->
+    <section class="course-video">
+      <h1>Introduction to Web Development</h1>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p>Description or transcript of the video content can go here.</p>
+    </section>
+  </main>
+
+<div id="auth-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Login to Learnify</h2>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <button class="btn">Login</button>
+    <span class="close">&times;</span>
+  </div>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Learnify - E-Learning Platform</p>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
